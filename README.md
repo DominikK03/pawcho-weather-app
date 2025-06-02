@@ -53,7 +53,7 @@ Workflow uruchamia się automatycznie przy:
 Używa pełnego obrazu `node:20-alpine` z narzędziami do instalacji zależności (npm install), ale nie trafiają one do finalnego obrazu.
 - Etap `run`:
 
-Bazuje na minimalistycznym `alpine:latest` z samym Node.js (bez narzędzi developerskich), co redukuje rozmiar i powierzchnię ataku.
+Bazuje na minimalistycznym `alpine:latest` z samym Node.js oraz npm (bez narzędzi developerskich), co redukuje rozmiar i powierzchnię ataku.
 
 ### Opis
 
@@ -81,5 +81,5 @@ oraz wymuszone czyszczene cache'a, co również przyczyniło się do redukcji ro
 ### Set up
 Aby pobrać i uruchomić kontener należy wykonać następujące kroki:
 
-- docker pull DominikK03/pawcho-weather-app:latest
-- docker run -p 3000:3000 DominikK03/pawcho-weather-app:latest
+- docker pull dominikk03/pawcho-weather-app:latest
+- docker run -p 3000:3000 dominikk03/pawcho-weather-app:latest
