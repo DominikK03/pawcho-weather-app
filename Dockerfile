@@ -11,7 +11,7 @@ COPY . .
 FROM alpine:latest AS run
 WORKDIR /var/www
 
-RUN apk --no-cache add nodejs &&\
+RUN apk --no-cache add nodejs npm &&\
     rm -rf /var/cache/apk/*
 
 COPY --from=build /var/www/ ./
