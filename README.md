@@ -83,4 +83,3 @@ Aby pobrać i uruchomić kontener należy wykonać następujące kroki:
 
 - docker pull DominikK03/pawcho-weather-app:latest
 - docker run -p 3000:3000 DominikK03/pawcho-weather-app:latest
-...
