@@ -14,7 +14,8 @@ env:
 jobs:
   build:
     env:
-      DOCKER_IMAGE: ${{ vars.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME}}
+      DOCKER_IMAGE: ${{ vars.DOCKERHUB_USERNAME }}/pawcho-weather-app
+
     name: Build, test and push docker image for weather-app
     runs-on: ubuntu-latest
     strategy:
